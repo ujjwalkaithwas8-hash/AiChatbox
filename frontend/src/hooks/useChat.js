@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 
 const STORAGE_KEY = 'nexai_chat_v1';
-const API_URL = `${import.meta.env.VITE_API_URL || ''}/api/chat`;
+const API_URL = `${import.meta.env.VITE_API_URL || 'https://aichatbox-qjig.onrender.com'}/api/chat`;
 const uid = () => (crypto.randomUUID ? crypto.randomUUID() : String(Date.now() + Math.random()));
 
 function loadSaved() {
